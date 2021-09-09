@@ -1,3 +1,10 @@
 body {
-    background-color: blanchedalmond;
+    background-color: rgb(63,68,251);
+    background: radial-gradient(circle, rgba(63,68,251,1) 0%, rgba(208,70,252,1) 100%);
+    font-family: 'Urbanist', sans-serif;
+}
+
+.barraNav ul li {
+    list-style: none;
+    text-decoration: none;
 }
