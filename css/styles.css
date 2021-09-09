@@ -3,7 +3,9 @@ body {
     background: radial-gradient(circle, rgba(63,68,251,1) 0%, rgba(208,70,252,1) 100%);
     font-family: 'Urbanist', sans-serif;
     color: white;
+    margin: 0 auto;
 }
+
    /* diseño del header (incompleto) */
     .barraNav ul li {
         list-style: none;
@@ -12,26 +14,35 @@ body {
 
     nav.barraNav {
         background-color: black;
-        width: 100%;
+        width: 100vw;
         margin: 0px;
         display: flex;
         flex-wrap: wrap;
-        padding: 10px;
     }
     div.logoMenu img {
-        width: 10vw;
+        width: 5vw;
+        padding: 25px 0px 0px 13px;
         justify-content: left;
     }
     div.logoBuscar img {
-        width: 10vw;
+        width: 5vw;
+        padding: 25px 13px 0px 0px;
         justify-content: right;
     }
 
     div.novaLogo {
         justify-content: center;
+
     }
+
     div.novaLogo img {
         width: 20vw;
+        padding: 7px 0px 0px 0px;
+    }
+
+    .barraNav{
+        display: flex;
+        justify-content: space-between;
     }
 
     ul.menu {
@@ -42,6 +53,7 @@ body {
 section.peliculasSeries {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 section.peliculasSeries article {
     width: 42%;
@@ -51,11 +63,12 @@ section.peliculasSeries article {
     justify-content: space-around;
 }
 section.peliculasSeries article h3 {
-    font-size: 10px;
+    font-size: 20px;
 }
 section.peliculasSeries article p {
     font-size: 5px;
 }
+
 div.photo-container {
     display: flex;
     flex-wrap: wrap;
@@ -64,14 +77,26 @@ div.photo-container img {
     width: 100%;
 }
 h1.tituloPrincipal {
+    font-size: 37px;
     text-align: center;
     border: solid black 1px;
     padding: 4px;
     color: black;
 }
 
+.peliculasSeries article h3{
+    text-align: center;
+}
+
 /* diseño del footer */
-footer ul li {
+div ul li {
     list-style: none;
     text-decoration: none;
+    
+}
+
+footer{
+    background-color: black;
+    display: inline;
+    color: white;
 }
