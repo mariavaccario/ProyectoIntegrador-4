@@ -69,3 +69,9 @@ h1.tituloPrincipal {
     padding: 4px;
     color: black;
 }
+
+/* diseño del footer */
+footer ul li {
+    list-style: none;
+    text-decoration: none;
+}
