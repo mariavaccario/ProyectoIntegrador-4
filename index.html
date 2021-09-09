@@ -11,10 +11,19 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+    <!-- este header es el que vamos a editar, y cuando ya este perfecto (incluido el CSS) ahi lo copiamos en los demas HTML -->
     <div class="mainContainer">
         <nav class="barraNav">
-            <img src="./img/novaLogo.png" alt="Logo NOVA">
-            <ul>
+            <div class="logoMenu">
+                <img src="./img/menu.png" alt="menu">
+            </div>
+            <div class="novaLogo">
+                <img src="./img/novaLogo.png" alt="Logo NOVA">
+            </div>
+            <div class="logoBuscar">
+                <img src="./img/search.png" alt="buscar">
+            </div>
+            <ul class="menu">
                 <li> <a href="index.html">Home</a> </li>
                 <li> <a href="detailMovie.html"></a>Detalle Peliculas</li>
                 <li> <a href="detailSeries.html">Detalle Series</a></li>
@@ -29,7 +38,7 @@
                 <h1 class="tituloPrincipal">Películas populares</h1>
             </section>
 
-            <section class="peliculasPopulares">
+            <section class="peliculasSeries">
 
                 <article>
                     <h3>The Suicide Squad 2</h3>
@@ -72,7 +81,11 @@
                 </article>
             </section>
 
-            <section class="seriesPopulares"> <!--poner fotos-->
+            <section>
+                <h1 class="tituloPrincipal">Series Populares</h1>
+            </section>
+
+            <section class="peliculasSeries"> <!--poner fotos-->
                 <article>
                     <h3>Friends</h3>
                     <div class="photo-container">
@@ -114,8 +127,10 @@
                 </article>
 
             </section>
-
-            <section class="masVistoPeliculas">
+            <section>
+                <h1 class="tituloPrincipal">Peliculas Mas Vistas</h1>
+            </section>
+            <section class="peliculasSeries">
                 <article>
                     <h3>Avatar</h3>
                     <div class="photo-container">
@@ -160,7 +175,7 @@
 
         </main>
     
-<footer>  
+<footer class="linkedins">  
     <ul> 
         <li><a href="https://www.linkedin.com/in/delfina-galarza-69b853207/" target="_blanck">Delfina Galarza</a></li>
         <li><a href="https://www.linkedin.com/in/i%C3%B1aki-valencia-918555207" target="_blanck">Iniaki Valencia</a></li>
