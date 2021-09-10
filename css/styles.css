@@ -60,6 +60,7 @@ section.peliculasSeries article {
     margin: 5px;
     padding: 5px;
     justify-content: space-around;
+    border-radius: 6px;
 }
 
 section.peliculasSeries article h3 {
