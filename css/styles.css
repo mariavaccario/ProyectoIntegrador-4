@@ -93,11 +93,29 @@ h1.tituloPrincipal {
 div ul li {
     list-style: none;
     text-decoration: none;
-    
+   
 }
 
-footer{
+.FooterTodo{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+
+.FooterTodo ul{
     background-color: black;
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    margin: 0px;
+}
+
+.FooterTodo ul li{
     display: inline;
+   list-style: none;
+   }
+
+.FooterTodo ul li a{
     color: white;
+    text-decoration: none;
+    text-align: center;
 }
