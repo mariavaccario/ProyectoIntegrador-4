@@ -82,9 +82,9 @@ div.photo-container img {
 h1.tituloPrincipal {
     font-size: 37px;
     text-align: center;
-    border: solid black 1px;
+    border: solid white 1px;
     padding: 4px;
-    color: black;
+    color: white;
 }
 
 .peliculasSeries article h3{
@@ -174,7 +174,7 @@ section.peliculasSeries.detalle article{
     text-align: center;
     border: solid black 1px;
     background-color: black;
-
+    margin-bottom: 0px;
 }
 
 .fotogenero{
@@ -184,4 +184,14 @@ section.peliculasSeries.detalle article{
 
 .GenerosPopulares section{
     margin: 0 auto;
+}
+
+/* style de search-results */
+.tituloBusqueda {
+    text-align: center;
+}
+
+/* style de favorite */
+.tituloFavorite {
+    text-align: center;
 }
