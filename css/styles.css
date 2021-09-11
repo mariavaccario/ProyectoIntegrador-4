@@ -64,7 +64,7 @@ section.peliculasSeries article {
 }
 
 section.peliculasSeries article h3 {
-    font-size: 20px;
+    font-size: 19px;
 }
 section.peliculasSeries article p {
     font-size: 15px;
@@ -92,7 +92,7 @@ h1.tituloPrincipal {
     text-align: center;
 }
 
-/* diseño del footer */
+/* style del footer */
 div ul li {
     list-style: none;
     text-decoration: none;
@@ -125,7 +125,7 @@ div ul li {
     text-align: center;
 }
 
-/* diseño menu mobile */
+/* style menu mobile */
 section ul.menuMobile {
     display: flex;
     flex-wrap: wrap;
