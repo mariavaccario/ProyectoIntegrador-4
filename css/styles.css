@@ -74,9 +74,10 @@ section.peliculasSeries article p {
 div.photo-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 div.photo-container img {
-    width: 100%;
+    width: 45vw;
     height: 40vh;
 }
 h1.tituloPrincipal {
@@ -177,10 +178,16 @@ section.peliculasSeries.detalle article{
     margin-bottom: 0px;
 }
 
-.fotogenero{
+.fotogenero {
     justify-content: center;
     padding: 0px 0px 0px 0px;
 }
+
+div.photo-container img.fotogenero {
+    width: 100vw;
+}
+ 
+
 
 .GenerosPopulares section{
     margin: 0 auto;
