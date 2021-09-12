@@ -193,6 +193,10 @@ div.photo-container img.fotogenero {
 /* style de search-results */
 .tituloBusqueda {
     text-align: center;
+    border: solid white 1px;
+}
+.subtituloBusqueda {
+    text-align: center;
 }
 
 /* style de favorite */
@@ -201,7 +205,6 @@ div.photo-container img.fotogenero {
 }
 
 /* style de detail.genres */
-
 
 
 .GrHead{
