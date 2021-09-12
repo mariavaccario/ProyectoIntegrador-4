@@ -132,8 +132,8 @@ section ul.menuMobile {
     margin: 10px 0px;
     justify-content: left;
     padding-inline-start: 0px;
-    
 }
+
 section ul.menuMobile li{
     display: block;
     background-color: black;
@@ -144,7 +144,7 @@ section ul.menuMobile li{
     
 }
 
-section ul.menuMobile li a {
+section ul.menuMobile a {
     text-decoration: none;
     list-style: none;
     color: white;
@@ -175,6 +175,11 @@ section.peliculasSeries.detalle article{
     border: solid black 1px;
     background-color: black;
     margin-bottom: 0px;
+    color: white;
+}
+
+h3.generostipos {
+    text-decoration: none;
 }
 
 .fotogenero {
