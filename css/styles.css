@@ -202,3 +202,15 @@ div.photo-container img.fotogenero {
 .tituloFavorite {
     text-align: center;
 }
+
+/* style de detail.genres */
+
+.DetallesdeGeneros{
+    font-size: 37px;
+    text-align: center;
+    border: solid white 1px;
+    padding: 4px;
+    color: white;
+}
+
+
