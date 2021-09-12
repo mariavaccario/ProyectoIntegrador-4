@@ -169,7 +169,6 @@ section.peliculasSeries.detalle article{
     text-align: center;
     font-size: 25px;
     border: solid black 1px;
-
 }
 .generostipos{
     text-align: center;
@@ -187,8 +186,6 @@ div.photo-container img.fotogenero {
     width: 100vw;
 }
  
-
-
 .GenerosPopulares section{
     margin: 0 auto;
 }
@@ -205,12 +202,12 @@ div.photo-container img.fotogenero {
 
 /* style de detail.genres */
 
-.DetallesdeGeneros{
-    font-size: 37px;
+
+
+.GrHead{
+    font-size: 20px;
     text-align: center;
-    border: solid white 1px;
+    border: solid black 1px;
     padding: 4px;
-    color: white;
+    color: black;  
 }
-
-
