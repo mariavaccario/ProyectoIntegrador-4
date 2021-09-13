@@ -165,11 +165,11 @@ section.peliculasSeries.detalle article{
 
 /* pagina de generos.html */
 
-.GenerosTitulo{
+h1.GenerosTitulo {
     text-align: center;
     font-size: 25px;
     width: 100%;
-    border: solid black 1px;
+    border: solid white 1px;
 }
 .generostipos{
     text-align: center;
@@ -178,6 +178,7 @@ section.peliculasSeries.detalle article{
     margin-bottom: 0px;
     color: white;
 }
+
 
 section.GenerosPopulares article h3.generostipos {
     text-decoration: none;
@@ -212,11 +213,15 @@ div.photo-container img.fotogenero {
 
 /* style de detail.genres */
 
-
 .GrHead{
     font-size: 20px;
     text-align: center;
-    border: solid black 1px;
+    border: solid white 1px;
     padding: 4px;
-    color: black;  
+    color: white;  
+}
+
+h1.tituloPrincipal {
+    color: black;
+    border: solid black 1px;
 }
