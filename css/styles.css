@@ -82,6 +82,7 @@ div.photo-container img {
     width: 100%;
     height: 60vh;
 }
+
 h1.tituloPrincipal {
     font-size: 37px;
     text-align: center;
@@ -218,8 +219,14 @@ div.photo-container img.fotogenero {
 }
 
 h1.tituloPrincipal {
-    color: black;
-    border: solid black 1px;
+    color: white;
+    border: solid white 1px;
+}
+
+
+.linkeado{
+    text-decoration: none;
+    color: white;
 }
 
 /* style menu tablet */
@@ -315,6 +322,7 @@ h3.generostipos{
 
 @media (min-width: 1024px) {
     
+    
     /* header */
     nav.barraNav {
         display: none;
@@ -380,18 +388,43 @@ h3.generostipos{
     .FooterTodo {
         margin: 20px 0px 0px 0px;
     }
+
+        /* section generos */
+
     section.GenerosPopulares {
         display: flex;
         flex-wrap: wrap;
     }
+
     section.GenerosPopulares article {
         width: 47vw;
         display: inline;
-        margin: 5px;
-        justify-content: space-between;
+        margin: 1px 0px 10px 5px;
+        justify-content: space-around;
+        border-radius: 5px;
     }
+
     section.GenerosPopulares article div.photo-container img {
-        width: 100%;
+        width: 47vw;
     }
-   
+
+.fotogenero{
+    width: 100%;
+}
+
+section.peliculasSeries article.generosDetalle img{
+    height: 50vh;
+}
+
+section.peliculasSeries article.generosDetalle{
+    width: 20vw;
+    height: 70vh;
+}
+
+/* boton de busqueda */
+
+.menuBusqueda{
+    text-align: right;
+}
+
 }
