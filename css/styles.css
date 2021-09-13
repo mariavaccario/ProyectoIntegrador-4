@@ -168,6 +168,7 @@ section.peliculasSeries.detalle article{
 .GenerosTitulo{
     text-align: center;
     font-size: 25px;
+    width: 100%;
     border: solid black 1px;
 }
 .generostipos{
