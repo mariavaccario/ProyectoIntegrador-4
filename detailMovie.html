@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <div>
+    <div class="mainContainer">
         <nav class="barraNav">
             <div class="logoMenu">
                 <img src="./img/menu.png" alt="menu">
@@ -21,17 +21,26 @@
             </div>
             <div class="logoBuscar">
                 <a href="search-results.html"><img src="./img/search.png" alt="buscar"></a>
-
             </div>
-            <ul class="menu">
-                <li> <a href="index.html">Home</a> </li>
-                <li> <a href="detailMovie.html"></a>Detalle Peliculas</li>
-                <li> <a href="detailSeries.html">Detalle Series</a></li>
-                <li> <a href="favorite.html"></a>Favoritos</li>
-                <li> <a href="genres.html"></a>Géneros</li>
-            </ul>
         </nav>
-    <main>
+        
+        <section class="headerDesktop">
+            <div class="novaLogo">
+                <a href="index.html"><img src="./img/novaLogo.png" alt="Logo NOVA"></a>
+            </div>
+            
+            <div class="menuDesktop">
+                <ul>
+                <li> <a href="index.html">Home |</a> </li>
+                <li> <a href="detailMovie.html">Peliculas |</a> </li>
+                <li> <a href="detailSeries.html">Series |</a></li>
+                <li> <a href="favorite.html">Favoritos |</a> </li>
+                <li> <a href="genres.html">Géneros |</a> </li>
+            </ul>
+            </div>
+        </section>
+        
+        <main>
         <section>
             <h1 class="tituloPrincipal">Detalle de peliculas</h1>
         </section>
@@ -39,9 +48,9 @@
 
         <article id="suicideSquadDetail">
             <div class="photo-container">
-                <img src="./img/SuicideSquad.jpeg" alt="Suicide Squad poster">
+                <img src="./img/SuicideSquad.jpeg" alt="Suicide Squad 2 poster">
             </div>
-            <h3>Suicide Squad</h3>
+            <h3>The Suicide Squad 2</h3>
             <hr class="linea">
             <p>Rating 7.4/10</p>
             <hr class="linea">
@@ -218,7 +227,6 @@
             <!-- Agregar a favoritos -->
         </article>
         </section>
-        
         <section>
             <ul class="menuMobile">
                 <a href="index.html"><li>Home</li></a>
