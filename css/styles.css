@@ -44,7 +44,8 @@ body {
         justify-content: space-between;
     }
 
-    ul.menu {
+
+    section.headerDesktop {
         display: none;
     }
 
@@ -224,6 +225,18 @@ h1.tituloPrincipal {
 
 @media (min-width: 768px) {
 
+/* style iconos */
+
+div.logoMenu img {
+    width: 5vw;
+    padding: 20px 0px 0px 13px;
+    justify-content: left;
+}
+div.logoBuscar img {
+    width: 5vw;
+    padding: 20px 13px 0px 0px;
+    justify-content: right;
+}
 
 /* style del footer */
 
@@ -287,4 +300,28 @@ h3.generostipos{
  h4{
      font-size: 30px;
  }
+}
+
+/* style desktop */
+
+@media (min-width: 1024px) {
+    nav.barraNav {
+        display: none;
+    }
+    section.headerDesktop {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: black;
+    }
+    section.headerDesktop div {
+        display: inline;
+    }
+    section.headerDesktop div.headerDesktop img{
+        width: 5vw;
+    }
+
+    section.headerDesktop div ul li a{
+        text-decoration: none;
+        color: white;
+    }
 }
