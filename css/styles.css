@@ -152,12 +152,6 @@ section ul.menuMobile a {
 
 /* css detail movie */
 
-/* 
-section.peliculasSeries.detalle article{
-    width: 100vw;
-} */
-
-
 
 .detalle hr.linea {
     color: white;
@@ -224,4 +218,73 @@ div.photo-container img.fotogenero {
 h1.tituloPrincipal {
     color: black;
     border: solid black 1px;
+}
+
+/* style menu tablet */
+
+@media (min-width: 768px) {
+
+
+/* style del footer */
+
+.FooterTodo ul li a{
+    font-size: 27px;
+}
+
+/* style del menuTablet */
+
+section ul.menuMobile a {
+    font-size: 33px;
+}
+
+
+/* style del index */
+
+section.peliculasSeries article h3 {
+    font-size: 30px;
+}
+section.peliculasSeries article p {
+    font-size: 25px;
+}
+
+h1.tituloPrincipal {
+    font-size: 50px;   
+}
+
+div.photo-container img {
+    width: 45vw;
+    height: 48vh;
+}
+
+/* style de peliculas */
+
+/* style de menu de busqueda */
+
+h3.tituloBusqueda{
+    font-size: 40px;
+}
+
+h3.subtituloBusqueda{
+    font-size: 45px;
+}
+
+/* style de Generos */
+
+h1.GenerosTitulo{
+    font-size: 50px;
+}
+
+h3.generostipos{
+    font-size: 38px;
+}
+
+ /* style de detail generos */
+
+ h1.GrHead{
+     font-size: 40px;
+ }
+
+ h4{
+     font-size: 30px;
+ }
 }
