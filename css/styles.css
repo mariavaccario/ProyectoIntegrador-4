@@ -228,6 +228,10 @@ h1.tituloPrincipal {
     text-decoration: none;
     color: white;
 }
+div.photo-container img.fotogenero {
+    width: 100vw;
+    height: 27vh;
+}
 
 /* style menu tablet */
 
@@ -315,6 +319,10 @@ h3.generostipos{
     padding: 5px;
     justify-content: space-around;
     border-radius: 6px;
+}
+div.photo-container img.fotogenero {
+    width: 100vw;
+    height: 45vh;
 }
 }
 
@@ -408,23 +416,23 @@ h3.generostipos{
         width: 47vw;
     }
 
-.fotogenero{
+    .fotogenero{   
     width: 100%;
-}
+    }
 
-section.peliculasSeries article.generosDetalle img{
+    section.peliculasSeries article.generosDetalle img{
     height: 50vh;
-}
+    }
 
-section.peliculasSeries article.generosDetalle{
+    section.peliculasSeries article.generosDetalle{
     width: 20vw;
     height: 70vh;
-}
+    }
 
-/* boton de busqueda */
+    /* boton de busqueda */
 
-.menuBusqueda{
+    .menuBusqueda{
     text-align: right;
-}
+    }
 
 }
