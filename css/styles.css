@@ -108,11 +108,12 @@ div ul li {
     display: flex;
     flex-wrap: wrap; 
     justify-content: center;
+    width: 100vw;
 }
 
 .FooterTodo ul{
     background-color: black;
-    width: 100%;
+    width: 100vw;
     margin: 0px;
     padding: 10px 0px 10px 0px;
     text-align: center;
@@ -144,9 +145,8 @@ section ul.menuMobile li{
     background-color: black;
     border: solid white 1px;
     width: 100vw;
-    padding: 5px;
-    text-align: center;
-    
+    padding: 0px;
+    text-align: center;    
 }
 
 section ul.menuMobile a {
@@ -257,6 +257,8 @@ div.logoBuscar img {
 .FooterTodo ul li a{
     font-size: 27px;
 }
+
+ 
 
 /* style del menuTablet */
 
@@ -406,6 +408,7 @@ div.photo-container img.fotogenero {
     section.GenerosPopulares {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     section.GenerosPopulares article {
@@ -413,7 +416,7 @@ div.photo-container img.fotogenero {
         display: inline;
         margin: 1px 0px 10px 5px;
         justify-content: space-around;
-        border-radius: 5px;
+        border-radius: 5px;  
     }
 
     section.GenerosPopulares article div.photo-container img {
