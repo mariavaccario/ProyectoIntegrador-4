@@ -340,40 +340,27 @@ div.photo-container img.fotogenero {
         display: none;
     }
 
-    section.headerDesktop {
+    nav.headerDesktop {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row;
         background-color: black;
-        padding: 20px 0px 20px 20px;
+        padding: 0px 0px 0px 0px;
         align-items: center;
+        justify-content: space-between;
     }
 
-   
-    section.headerDesktop div.novaLogo img{
+    nav.headerDesktop div.novaLogo img{
         width: 6vw;  
+        padding-left: 15px;
     }
 
-    section.headerDesktop div.novaLogo {
-        justify-content: flex-start;
-        }
-
-    section.headerDesktop div ul li a{
+    nav.headerDesktop div ul li a{
         text-decoration: none;
         color: white;
         font-size: 22px; 
-        
     }
-
-    section.headerDesktop div ul li{
+    nav.headerDesktop div ul li{
         display: inline;
-    }
-
-    section.headerDesktop div {
-        justify-content: space-between;
-    }
-    section.headerDesktop div ul {
-        text-align: right;
     }
 
     /*articulos*/
@@ -434,12 +421,6 @@ div.photo-container img.fotogenero {
     section.peliculasSeries article.generosDetalle{
     width: 20vw;
     height: 70vh;
-    }
-
-    /* boton de busqueda */
-
-    .menuBusqueda{
-    text-align: right;
     }
 
 }
