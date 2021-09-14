@@ -3,7 +3,8 @@ body {
     background: radial-gradient(circle, rgba(63,68,251,1) 0%, rgba(208,70,252,1) 100%);
     font-family: 'Urbanist', sans-serif;
     color: white;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
 }
 
    /* diseño del header (incompleto) */
@@ -279,7 +280,7 @@ h1.tituloPrincipal {
 
 div.photo-container img {
     width: 45vw;
-    height: 48vh;
+    height: 70vh;
 }
 
 /* style de peliculas */
@@ -323,7 +324,7 @@ h3.generostipos{
 }
 div.photo-container img.fotogenero {
     width: 100vw;
-    height: 45vh;
+    height: 60vh;
 }
 }
 
@@ -358,7 +359,8 @@ div.photo-container img.fotogenero {
     section.headerDesktop div ul li a{
         text-decoration: none;
         color: white;
-        font-size: 30px; 
+        font-size: 22px; 
+        
     }
 
     section.headerDesktop div ul li{
