@@ -47,7 +47,7 @@ body {
     }
 
 
-    section.headerDesktop {
+    nav.headerDesktop {
         display: none;
     }
 
