@@ -59,7 +59,6 @@ section.peliculasSeries {
 }
 section.peliculasSeries article {
     width: 95vw;
-    /* width: 95vw */
     background-color: black;
     margin: 5px;
     padding: 5px;
@@ -155,9 +154,40 @@ section ul.menuMobile a {
     color: white;
 }
 
-/* css detail movie */
+/* style detail movie */
 
+section.peliculasSeriesDetalle {
+    display: flex;
+    flex-wrap: wrap; 
+    background-color: black;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 6px;
+}
+section.peliculasSeriesDetalle div {
+    display: inline;
+    width: 95vw;
+    margin: 5px;
+    padding: 5px;
+    justify-content: space-around;
+}
 
+section.peliculasSeriesDetalle div.photo-container img{
+    width: 100%;
+    height: 65vh;
+}
+section.peliculasSeriesDetalle div.datos {
+    width: 100%;
+    padding: 15px;
+}
+section.peliculasSeriesDetalle div.datos h3 {
+    font-size: 30px;
+    text-align: center;
+}
+section.peliculasSeriesDetalle div.datos p {
+    font-size: 18px;
+    text-align: center;
+}
 .detalle hr.linea {
     color: white;
 }
@@ -292,7 +322,41 @@ div.photo-container img {
     height: 70vh;
 }
 
-/* style de peliculas */
+/* style detail movie */
+
+section.peliculasSeriesDetalle {
+    display: flex;
+    flex-wrap: wrap; 
+    background-color: black;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 6px;
+}
+section.peliculasSeriesDetalle div {
+    display: inline;
+    width: 95vw;
+    margin: 5px;
+    padding: 5px;
+    justify-content: center;
+   
+}
+section.peliculasSeriesDetalle div.photo-container img{
+    width: 90%;
+    height: 85vh;
+    padding: 34px;
+}
+section.peliculasSeriesDetalle div.datos {
+    width: 100%;
+    padding: 15px;
+}
+section.peliculasSeriesDetalle div.datos h3 {
+    font-size: 40px;
+    text-align: center;
+}
+section.peliculasSeriesDetalle div.datos p {
+    font-size: 25px;
+    text-align: center;
+}
 
 /* style de menu de busqueda */
 
@@ -413,7 +477,7 @@ div.photo-container img.fotogenero {
         margin: 20px 0px 0px 0px;
     }
 
-        /* section generos */
+    /* section generos */
 
     section.GenerosPopulares {
         display: flex;
@@ -444,6 +508,36 @@ div.photo-container img.fotogenero {
     section.peliculasSeries article.generosDetalle{
     width: 20vw;
     height: 70vh;
+    }
+
+    /* section detail peliculas y series */
+
+    section.peliculasSeriesDetalle {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: black;
+        margin: 5px;
+        padding: 5px;
+        border-radius: 6px;
+    }
+    section.peliculasSeriesDetalle div {
+        display: inline;
+    }
+    
+    section.peliculasSeriesDetalle div.photo-container img{
+        width: 30vw;
+        height: 70vh;
+        padding: 15px;
+    }
+    section.peliculasSeriesDetalle div.datos {
+        width: 60vw;
+        padding: 15px;
+    }
+    section.peliculasSeriesDetalle div.datos h3 {
+        font-size: 37px;
+    }
+    section.peliculasSeriesDetalle div.datos p {
+        font-size: 23px;
     }
 
 }
