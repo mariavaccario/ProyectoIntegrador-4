@@ -211,6 +211,7 @@ h1.GenerosTitulo {
 
 section.GenerosPopulares article h3.generostipos {
     text-decoration: none;
+    border: solid white 1px;
 }
 
 .fotogenero {
@@ -220,11 +221,14 @@ section.GenerosPopulares article h3.generostipos {
 
 div.photo-container img.fotogenero {
     width: 100vw;
+    border: solid white 1px;
 }
  
 .GenerosPopulares section{
     margin: 0 auto;
+
 }
+ 
 
 /* style de search-results */
 .tituloBusqueda {
@@ -528,15 +532,17 @@ div.photo-container img.fotogenero {
         width: 30vw;
         height: 70vh;
         padding: 15px;
+
     }
     section.peliculasSeriesDetalle div.datos {
         width: 60vw;
         padding: 15px;
+
     }
-    section.peliculasSeriesDetalle div.datos h3 {
+    section.peliculasSeriesDetalle div.datos h3{
         font-size: 37px;
     }
-    section.peliculasSeriesDetalle div.datos p {
+    section.peliculasSeriesDetalle div.datos p{
         font-size: 23px;
     }
 
