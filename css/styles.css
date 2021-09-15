@@ -7,7 +7,7 @@ body {
     padding: 0;
 }
 
-   /* diseño del header (incompleto) */
+   /* diseño del header*/
     .barraNav ul li {
         list-style: none;
         text-decoration: none;
@@ -352,7 +352,6 @@ div.photo-container img.fotogenero {
         display: flex;
         flex-wrap: wrap;
         background-color: black;
-        padding: 0px 0px 0px 0px;
         align-items: center;
         justify-content: space-between;
     }
@@ -371,6 +370,22 @@ div.photo-container img.fotogenero {
         display: inline;
     }
 
+    div.novaLogo {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    div.menuDesktop {
+        padding-right: 20px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .formBusqueda {
+        padding-left: 8px;
+    }
+    
     /*articulos*/
     section.peliculasSeries article {
         width: 18vw;
