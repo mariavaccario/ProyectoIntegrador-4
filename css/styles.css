@@ -205,8 +205,15 @@ div.photo-container img.fotogenero {
     text-align: center;
 }
 
+.resultNotFound {
+    display: none;
+}
+
 /* style de favorite */
 .tituloFavorite {
+    text-align: center;
+}
+.subtituloFavorite {
     text-align: center;
 }
 
@@ -305,6 +312,7 @@ h1.GenerosTitulo{
 
 h3.generostipos{
     font-size: 38px;
+    margin: 0;
 }
 
  /* style de detail generos */
@@ -403,7 +411,7 @@ div.photo-container img.fotogenero {
         display: inline;
         margin: 1px 0px 10px 5px;
         justify-content: space-around;
-        border-radius: 5px;  
+        border-radius: 5px;
     }
 
     section.GenerosPopulares article div.photo-container img {
