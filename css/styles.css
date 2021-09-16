@@ -160,17 +160,16 @@ section ul.menuMobile a {
 section.peliculasSeriesDetalle {
     display: flex;
     flex-wrap: wrap; 
+    justify-content: space-between;
     background-color: black;
     margin: 5px;
     padding: 5px;
     border-radius: 6px;
 }
 section.peliculasSeriesDetalle div {
-    display: inline;
     width: 95vw;
     margin: 5px;
     padding: 5px;
-    justify-content: space-around;
 }
 
 section.peliculasSeriesDetalle div.photo-container img{
