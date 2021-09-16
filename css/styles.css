@@ -166,25 +166,25 @@ section.peliculasSeriesDetalle {
     padding: 5px;
     border-radius: 6px;
 }
-section.peliculasSeriesDetalle div {
+section.peliculasSeriesDetalle article {
     width: 95vw;
     margin: 5px;
     padding: 5px;
 }
 
-section.peliculasSeriesDetalle div.photo-container img{
+section.peliculasSeriesDetalle article.photo-container img{
     width: 100%;
     height: 65vh;
 }
-section.peliculasSeriesDetalle div.datos {
+section.peliculasSeriesDetalle article.datos {
     width: 100%;
     padding: 15px;
 }
-section.peliculasSeriesDetalle div.datos h3 {
+section.peliculasSeriesDetalle article.datos h3 {
     font-size: 30px;
     text-align: center;
 }
-section.peliculasSeriesDetalle div.datos p {
+section.peliculasSeriesDetalle article.datos p {
     font-size: 18px;
     text-align: center;
 }
@@ -339,7 +339,7 @@ section.peliculasSeriesDetalle {
     border-radius: 6px;
 }
 
-section.peliculasSeriesDetalle div {
+section.peliculasSeriesDetalle article {
     display: inline;
     width: 95vw;
     margin: 5px;
@@ -348,23 +348,23 @@ section.peliculasSeriesDetalle div {
    
 }
 
-section.peliculasSeriesDetalle div.photo-container img{
+section.peliculasSeriesDetalle article.photo-container img{
     width: 90%;
     height: 85vh;
     padding: 34px;
 }
 
-section.peliculasSeriesDetalle div.datos {
+section.peliculasSeriesDetalle article.datos {
     width: 100%;
     padding: 15px;
 }
 
-section.peliculasSeriesDetalle div.datos h3 {
+section.peliculasSeriesDetalle article.datos h3 {
     font-size: 40px;
     text-align: center;
 }
 
-section.peliculasSeriesDetalle div.datos p {
+section.peliculasSeriesDetalle article.datos p {
     font-size: 25px;
     text-align: center;
 }
@@ -537,28 +537,35 @@ div.photo-container img.fotogenero {
         margin: 5px;
         padding: 5px;
         border-radius: 6px;
+        align-items: center;
     }
-    section.peliculasSeriesDetalle div {
+    section.peliculasSeriesDetalle article {
         display: inline;
+        width: 20vw;
+
     }
     
-    section.peliculasSeriesDetalle div.photo-container img{
+    section.peliculasSeriesDetalle article.photo-container img{
         width: 30vw;
         height: 70vh;
-        padding: 15px;
+        padding-left: 30px;
 
     }
 
-    section.peliculasSeriesDetalle div.datos {
+    section.peliculasSeriesDetalle article.datos {
         width: 60vw;
-        padding: 15px;
+        padding-right: 30px;
     }
 
-    section.peliculasSeriesDetalle div.datos h3{
+    section.peliculasSeriesDetalle article.datos h3{
         font-size: 37px;
     }
 
-    section.peliculasSeriesDetalle div.datos p{
+    section.peliculasSeriesDetalle article.datos h3.tituloDetail{
+        font-size: 48px;
+    }
+
+    section.peliculasSeriesDetalle article.datos p{
         font-size: 23px;
     }
 
