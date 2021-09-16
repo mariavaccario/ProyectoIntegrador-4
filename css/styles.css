@@ -20,11 +20,13 @@ body {
         display: flex;
         flex-wrap: wrap;
     }
+
     div.logoMenu img {
         width: 5vw;
         padding: 0px 0px 0px 13px;
         justify-content: left;
     }
+
     div.logoBuscar img {
         width: 5vw;
         padding: 0px 13px 0px 0px;
@@ -46,7 +48,6 @@ body {
         align-items: center;
     }
 
-
     nav.headerDesktop {
         display: none;
     }
@@ -57,6 +58,7 @@ section.peliculasSeries {
     flex-wrap: wrap;
     justify-content: center;
 }
+
 section.peliculasSeries article {
     width: 95vw;
     background-color: black;
@@ -69,6 +71,7 @@ section.peliculasSeries article {
 section.peliculasSeries article h3 {
     font-size: 19px;
 }
+
 section.peliculasSeries article p {
     font-size: 15px;
     text-align: center;
@@ -99,8 +102,7 @@ h1.tituloPrincipal {
 /* style del footer */
 div ul li {
     list-style: none;
-    text-decoration: none;
-   
+    text-decoration: none; 
 }
 
 .FooterTodo{
@@ -116,13 +118,12 @@ div ul li {
     margin: 0px;
     padding: 10px 0px 10px 0px;
     text-align: center;
-
 }
 
 .FooterTodo ul li{
     display: inline;
    list-style: none;
-   }
+}
 
 .FooterTodo ul li a{
     color: white;
@@ -243,6 +244,7 @@ div.photo-container img.fotogenero {
     display: none;
 }
 
+
 /* style de favorite */
 .tituloFavorite {
     text-align: center;
@@ -251,19 +253,18 @@ div.photo-container img.fotogenero {
     text-align: center;
 }
 
+
 /* style de detail.genres */
 
 .GrHead{
     font-size: 20px;
     text-align: center;
-    border: solid white 1px;
     padding: 4px;
     color: white;  
 }
 
 h1.tituloPrincipal {
     color: white;
-    border: solid white 1px;
 }
 
 
@@ -287,6 +288,7 @@ div.logoMenu img {
     padding: 20px 0px 0px 13px;
     justify-content: left;
 }
+
 div.logoBuscar img {
     width: 5vw;
     padding: 20px 13px 0px 0px;
@@ -313,6 +315,7 @@ section ul.menuMobile a {
 section.peliculasSeries article h3 {
     font-size: 30px;
 }
+
 section.peliculasSeries article p {
     font-size: 25px;
 }
@@ -336,6 +339,7 @@ section.peliculasSeriesDetalle {
     padding: 5px;
     border-radius: 6px;
 }
+
 section.peliculasSeriesDetalle div {
     display: inline;
     width: 95vw;
@@ -344,19 +348,23 @@ section.peliculasSeriesDetalle div {
     justify-content: center;
    
 }
+
 section.peliculasSeriesDetalle div.photo-container img{
     width: 90%;
     height: 85vh;
     padding: 34px;
 }
+
 section.peliculasSeriesDetalle div.datos {
     width: 100%;
     padding: 15px;
 }
+
 section.peliculasSeriesDetalle div.datos h3 {
     font-size: 40px;
     text-align: center;
 }
+
 section.peliculasSeriesDetalle div.datos p {
     font-size: 25px;
     text-align: center;
@@ -392,6 +400,7 @@ h3.generostipos{
  h4{
      font-size: 30px;
  }
+
  section.peliculasSeries article {
     width: 45vw;
     background-color: black;
@@ -400,6 +409,7 @@ h3.generostipos{
     justify-content: space-around;
     border-radius: 6px;
 }
+
 div.photo-container img.fotogenero {
     width: 100vw;
     height: 60vh;
@@ -434,6 +444,7 @@ div.photo-container img.fotogenero {
         color: white;
         font-size: 22px; 
     }
+
     nav.headerDesktop div ul li{
         display: inline;
     }
@@ -463,13 +474,16 @@ div.photo-container img.fotogenero {
         justify-content: space-around;
         border-radius: 6px;
     }
+
     div.photo-container img {
         width: 18vw;
         height: 45vh;
     }
+
     section.peliculasSeries article h3 {
         font-size: 23px;
     }
+
     section.peliculasSeries article p {
         font-size: 20px;
     }
@@ -477,6 +491,7 @@ div.photo-container img.fotogenero {
     section ul.menuMobile {
         display: none;
     }
+
     .FooterTodo {
         margin: 20px 0px 0px 0px;
     }
@@ -534,14 +549,16 @@ div.photo-container img.fotogenero {
         padding: 15px;
 
     }
+
     section.peliculasSeriesDetalle div.datos {
         width: 60vw;
         padding: 15px;
-
     }
+
     section.peliculasSeriesDetalle div.datos h3{
         font-size: 37px;
     }
+
     section.peliculasSeriesDetalle div.datos p{
         font-size: 23px;
     }
