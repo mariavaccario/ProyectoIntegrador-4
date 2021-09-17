@@ -560,8 +560,10 @@ div.photo-container img.fotogenero {
     section.peliculasSeriesDetalle article.photo-container img{
         width: 30vw;
         height: 70vh;
-        padding-left: 30px;
-    }
+        margin: 10px;   
+        border-radius: 30px; 
+        padding: 0; 
+}
 
     section.peliculasSeriesDetalle article.datos{
         width: 55vw;
