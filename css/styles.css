@@ -69,6 +69,7 @@ section.peliculasSeries article {
 
 section.peliculasSeries article h3 {
     font-size: 19px;
+    text-align: center;
 }
 
 section.peliculasSeries article p {
@@ -94,9 +95,6 @@ h1.tituloPrincipal {
     color: white;
 }
 
-.peliculasSeries article h3{
-    text-align: center;
-}
 
 /* style del footer */
 div ul li {
