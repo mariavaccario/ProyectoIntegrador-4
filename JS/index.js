@@ -12,7 +12,7 @@ fetch('https://api.themoviedb.org/3/movie/popular?api_key=c7d8a8e4054747c2b47d0f
       articulosPeliculasP+=`<article>
                                 <h3>${infoPP[i].title}</h3>
                                 <div class="photo-container">
-                                    <a href="./detailMovie.html"><img src="${infoPP[i].poster_path}" alt=""></a>
+                                    <a href="./detailMovie.html"><img src="https://image.tmdb.org/t/p/original${infoPP[i].poster_path}" alt=""></a>
                                 </div>
                                 <p>Estreno: ${infoPP[i].release_date}</p>
                             </article>`
@@ -36,11 +36,11 @@ fetch('https://api.themoviedb.org/3/tv/popular?api_key=c7d8a8e4054747c2b47d0f7eb
 
   for (let i=0; i<5; i++){
       articulosSeriesP+=`<article>
-                            <h3>${infoSP[i].title}</h3>
+                            <h3>${infoSP[i].original_name}</h3>
                             <div class="photo-container">
-                                <a href="./detailMovie.html"><img src="${infoSP[i].poster_path}" alt=""></a>
+                                <a href="./detailMovie.html"><img src="https://image.tmdb.org/t/p/original${infoSP[i].poster_path}"alt=""></a>
                             </div>
-                            <p>Estreno: ${infoSP[i].release_date}</p>
+                            <p>Valoración: ${infoSP[i].vote_average}</p>
                         </article>`
   }
   peliculasSeriesSP.innerHTML = articulosSeriesP;
