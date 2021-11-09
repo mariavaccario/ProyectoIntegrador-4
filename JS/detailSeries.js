@@ -2,7 +2,7 @@ let qs = location.search;
 let qsto = new URLSearchParams(qs);
 let id = qsto.get('id');
 
-let url = `https://api.themoviedb.org/3/tv/{tv_${id}}?api_key=c7d8a8e4054747c2b47d0f7ebafc99e6&language=en-US`;
+let url = `https://api.themoviedb.org/3/tv/${id}?api_key=c7d8a8e4054747c2b47d0f7ebafc99e6&language=en-US`;
 
 fetch(url)
     .then(function(response){
@@ -11,17 +11,19 @@ fetch(url)
     .then (function(data){
         console.log(data);
 
-        let poster_path = document.querySelector('fotoDetail');
+        let imagen = document.querySelector('.fotoDetail');
         let original_name = document.querySelector('.tituloDetail');
-        let vote_average =  document.querySelector('.rating');
+        let rating =  document.querySelector('.rating');
         let first_air_date = document.querySelector('.first_air_date');
         let overview =  document.querySelector('.overview');
+        let genero = document.querySelector('.genero');
 
-        poster_path.src = data.poster_path;
+        imagen.src = data.poster_path;
         original_name.innerText = data.original_name;
         rating.innerText = data.vote_average;
         first_air_date.innerText = data.first_air_date;
         overview.innerText = data.overview;
+        genero.innerText = data.genres;
 
     })
     .catch(function(error){
