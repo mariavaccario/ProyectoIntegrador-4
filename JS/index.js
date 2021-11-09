@@ -38,7 +38,7 @@ fetch('https://api.themoviedb.org/3/tv/popular?api_key=c7d8a8e4054747c2b47d0f7eb
       articulosSeriesP+=`<article>
                             <h3>${infoSP[i].original_name}</h3>
                             <div class="photo-container">
-                                <a href="./detailMovie.html"><img src="https://image.tmdb.org/t/p/original${infoSP[i].poster_path}"alt=""></a>
+                                <a href="./detailSeries.html?id=${infoSP[i].id}"><img src="https://image.tmdb.org/t/p/original${infoSP[i].poster_path}"alt=""></a>
                             </div>
                             <p>Valoración: ${infoSP[i].vote_average}</p>
                         </article>`
