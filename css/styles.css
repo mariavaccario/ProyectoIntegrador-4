@@ -107,10 +107,10 @@ div ul li {
     flex-wrap: wrap; 
     justify-content: center;
     width: 100vw;
+    background-color: black;
 }
 
 .FooterTodo ul{
-    background-color: black;
     width: 100vw;
     margin: 0px;
     padding: 10px 0px 10px 0px;
@@ -126,6 +126,16 @@ div ul li {
     color: white;
     text-decoration: none;
     text-align: center;
+}
+
+.FooterTodo img {
+    width: 32vw;
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+
+.tmdbLogoDesktop {
+    display: none;
 }
 
 /* style menu mobile */
@@ -495,6 +505,14 @@ div.photo-container img.fotogenero {
 
     .FooterTodo {
         margin: 20px 0px 0px 0px;
+    }
+
+    .tmdbLogoFooterMobile {
+        display: none;
+    } 
+
+    .tmdbLogoDesktop {
+        display: block;
     }
 
     /* section generos */
