@@ -64,7 +64,7 @@ fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=c7d8a8e4054747c2b47d
       articulosPeliculasV+=`<article>
                             <h3>${infoPV[i].title}</h3>
                             <div class="photo-container">
-                                <a href="./detailSeries.html?id=${infoPV[i].id}"><img src="https://image.tmdb.org/t/p/original${infoPV[i].poster_path}"alt=""></a>
+                                <a href="./detailMovie.html?id=${infoPV[i].id}"><img src="https://image.tmdb.org/t/p/original${infoPV[i].poster_path}"alt=""></a>
                             </div>
                             <p>Estreno: ${infoPV[i].release_date}</p>
                         </article>`
