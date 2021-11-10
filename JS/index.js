@@ -1,3 +1,5 @@
+
+//PELICULAS POPULARES
 fetch('https://api.themoviedb.org/3/movie/popular?api_key=c7d8a8e4054747c2b47d0f7ebafc99e6')
 .then(function(response) {
   return response.json()

@@ -29,3 +29,36 @@ fetch(url)
     .catch(function(error){
         console.log(error);
     })
+
+    //BOTON FAVORITOS
+
+    let favoritos = [];
+    let recuperoStorage = localStorage.getItem('favoritos');
+    
+    if (recuperoStorage != null) {
+        favoritos = JSON.parse(recuperoStorage);
+    }
+
+    let botonFav = document.querySelector('.agregarFavoritos');
+
+    if (favoritos.includes(id)){
+        botonFav.innerText = "Quitar de favoritos";
+    }
+    
+    botonFav.addEventListener ('click', function (e){
+        e.preventDefault();
+
+        if (favoritos.includes(id)){
+            let indice = favoritos.indexOf(id);
+            favoritos.splice(indice,1)
+            botonFav.innerText='Agregar a favoritos';
+        }
+        else {
+            favoritos.push (id);
+            botonFav.innerText='Quitar de favoritos'
+        }
+
+        let favsToString = JSON.stringify(favoritos);
+        localStorage.setItem('favoritos', favsToString);
+        console.log (localStorage)
+    })
