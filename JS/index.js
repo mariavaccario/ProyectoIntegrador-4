@@ -11,10 +11,10 @@ fetch('https://api.themoviedb.org/3/movie/popular?api_key=c7d8a8e4054747c2b47d0f
   let articulosPeliculasP = ('');
 
   for (let i=0; i<5; i++){
-      articulosPeliculasP+=`<article>
+      articulosPeliculasP +=`<article>
                                 <h3>${infoPP[i].title}</h3>
                                 <div class="photo-container">
-                                    <a href="./detailMovie.html"><img src="https://image.tmdb.org/t/p/original${infoPP[i].poster_path}" alt=""></a>
+                                    <a href="./detailMovie.html?=${infoPP[i].id}"><img src="https://image.tmdb.org/t/p/original${infoPP[i].poster_path}" alt=""></a>
                                 </div>
                                 <p>Estreno: ${infoPP[i].release_date}</p>
                             </article>`
