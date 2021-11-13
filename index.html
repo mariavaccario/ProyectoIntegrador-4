@@ -37,11 +37,18 @@
                     <li> <a href="favorite.html">Favoritos |</a> </li>
                     <li> <a href="genres.html">Géneros |</a> </li>
                 </ul>
-                <form action="./search-results.html" method="GET" class="formBusqueda">
-                    <input type="text" id="busqueda" name="busqueda" placeholder="Búsqueda" >
+                <form action="./search-results.html" method="GET" class="formBusqueda"> <!--hay cambios--> 
+                    <input type="text" name="search" value="" placeholder="Búsqueda" class="search">
                 </form> 
+                <p class="message"></p>
             </div>
         </nav>
+
+        <form action="./search-results.html" method="GET" class="formBusquedaMobile">
+            <input type="text" name="search" value="" placeholder="Búsqueda" class="search"> <!--hay cambios--> 
+        </form> 
+        <p class="message"></p>
+
     </header>
         
     

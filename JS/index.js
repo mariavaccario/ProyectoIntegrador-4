@@ -76,3 +76,22 @@ fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=c7d8a8e4054747c2b47d
 .catch(function(error) {
   console.log("Error: " + error);
 })
+
+
+// formulario de búsqueda 
+let formulario = document.querySelector('form');
+let inputField = document.querySelector('.search');
+let message = document.querySelector('.message');
+
+formulario.addEventListener('submit', function(evento){
+  evento.preventDefault();
+  console.log('No se envió')
+
+  if(inputField.value == ""){
+    message.innerText = "No has ingresado ningún término";
+  } else if (inputField.value.length < 3) {
+    message.innerText = "Debes ingresar al menos 3 caracteres"
+  } else {
+    this.submit();
+  }
+})
