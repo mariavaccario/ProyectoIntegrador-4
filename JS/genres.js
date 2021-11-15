@@ -12,9 +12,12 @@ fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=c7d8a8e4054747c2b47
     let info = dataGenerosP.genres
    
 
+let lista = ``
 for (let i=0; i<dataGenerosP.length; i++)
-generosP.innerHTML += 
-`<li> <a href= detailGenres.html?id=${dataGenerosP.data[id].id}">${dataGenerosP.data[i].name}</a> </li>`
+lista += `<li> <a href= detailGenres.html?id=${info[id].id}">${info[i].name}</a> </li>`
+console.log (lista)
+generosP.innerHTML = lista
+
 })
 
 
@@ -37,7 +40,7 @@ fetch(`https://api.themoviedb.org/3/genre/tv/list?api_key=c7d8a8e4054747c2b47d0f
    
 
 for (let i=0; i<dataGenerosTV.length; i++)
-generosTV.innerHTML += `<li> <a href= detailGenres.html?id=${dataGenerosTV.data[id].id}">${dataGenerosTV.data[i].name}</a> </li>`
+generosTV.innerHTML += `<li> <a href= detailGenres.html?id=${info[id].id}">${info[i].name}</a> </li>`
 })
 
 
