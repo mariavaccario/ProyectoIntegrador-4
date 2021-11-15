@@ -530,7 +530,11 @@ div.photo-container img.fotogenero {
         justify-content: center;
     }
 
-    section.GenerosPopulares article {
+    .listaGeneros {
+        text-decoration: none;
+        text-align: left;
+    }
+    /* section.GenerosPopulares article {
         width: 40vw;
         display: inline;
         margin: 1px 30px 30px 5px;
@@ -553,7 +557,7 @@ div.photo-container img.fotogenero {
     section.peliculasSeries article.generosDetalle{
     width: 20vw;
     height: 70vh;
-    }
+    } */
 
     /* section detail peliculas y series */
 
