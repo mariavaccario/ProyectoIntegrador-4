@@ -26,7 +26,7 @@ function tusFav(id){
         .then (function (response){
             return response.json();
         })
-        .then (function(data){
+        .then (function (data){
             console.log(data);
                 sFavoritas += `<article>
                                 <h3>${data.name}</h3>
@@ -41,7 +41,8 @@ function tusFav(id){
         .catch (function(error){
             console.log("Error:" + error);
         })
-
+    }
+    function pfavs(id){
     let urlP = `https://api.themoviedb.org/3/movie/${id}?api_key=c7d8a8e4054747c2b47d0f7ebafc99e6&language=en-US`
     fetch (urlP)
         .then (function(response){
