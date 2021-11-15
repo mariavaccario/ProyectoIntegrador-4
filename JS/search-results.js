@@ -1,11 +1,13 @@
-// Resultados de Series
+// Resultados de Películas
 
 let qs1 = location.search; // obtener la qs de la url
 let qsto1 = new URLSearchParams(qs1); // Transformar la qs en un objeto literal
 let idS = qsto1.get('id'); //Obtener el dato de id del objeto literal
 
 
-let urlSearchMovies = `https://api.themoviedb.org/3/search/tv?api_key=c7d8a8e4054747c2b47d0f7ebafc99e6&language=en-US&page=1&${busqueda}include_adult=false`;
+let urlSearchMovies = `https://api.themoviedb.org/3/search/tv?api_key=c7d8a8e4054747c2b47d0f7ebafc99e6&language=en-US&query=${search}page=1&include_adult=false`;
+console.log(urlSearchMovies);
+
 fetch(urlSearchMovies)
 .then(function(response){
     return response.json()
@@ -32,15 +34,15 @@ fetch(urlSearchMovies)
 })
 
 
-// Resultados de Películas
-let urlSearchSeries = `https://api.themoviedb.org/3/search/movie?api_key=c7d8a8e4054747c2b47d0f7ebafc99e6&language=en-US&page=1&${busqueda}include_adult=false`;
-fetch(urlSearchSeries)
-.then(function(response){
-    return response.json()
-})
-.then(function(data){
-    console.log(data);
-})
-.catch(function(error){
-    console.log(error)
-})
+// // Resultados de Series
+// let urlSearchSeries = `https://api.themoviedb.org/3/search/movie?api_key=c7d8a8e4054747c2b47d0f7ebafc99e6&language=en-US&page=1&${busqueda}include_adult=false`;
+// fetch(urlSearchSeries)
+// .then(function(response){
+//     return response.json()
+// })
+// .then(function(data){
+//     console.log(data);
+// })
+// .catch(function(error){
+//     console.log(error)
+// })

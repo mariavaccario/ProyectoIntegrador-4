@@ -15,7 +15,7 @@
     <header>
         <nav class="barraNav">
             <div class="logoMenu">
-                <a href="./detailGenres.html#menuInferior"><img src="./img/menu.png" alt="menu"></a>
+                <a href="./index.html#menuInferior"><img src="./img/menu.png" alt="menu"></a>
             </div>
             <div class="novaLogo">
                 <a href="index.html"><img src="./img/novaLogo.png" alt="Logo NOVA"></a>
@@ -37,10 +37,17 @@
                     <li> <a href="genres.html">Géneros |</a> </li>
                 </ul>
                 <form action="./search-results.html" method="GET" class="formBusqueda">
-                    <input type="text" id="busqueda" name="busqueda" placeholder="Búsqueda" >
+                    <input type="text" name="search" value="" placeholder="Búsqueda" class="search">
                 </form> 
+                <p class="message"></p>
             </div>
         </nav>
+
+        <form action="./search-results.html" method="GET" class="formBusquedaMobile">
+            <input type="text" name="search" value="" placeholder="Búsqueda" class="search"> 
+        </form> 
+        <p class="message"></p>
+
     </header>
         
         
@@ -95,13 +102,17 @@
                 </ul>
             </nav>
 
-<footer class="FooterTodo">  
-    <ul class="LinkedinLista"> 
-        <li><a href="https://www.linkedin.com/in/delfina-galarza-69b853207/" target="_blanck">Delfina Galarza |</a></li>
-        <li><a href="https://www.linkedin.com/in/i%C3%B1aki-valencia-918555207" target="_blanck">Iñaki Valencia |</a></li>
-        <li><a href="https://www.linkedin.com/in/maria-vaccario-833439212/" target="_blanck">Maria Vaccario</a></li>
-    </ul> 
- </footer>
+    <footer class="FooterTodo">  
+        <ul class="LinkedinLista"> 
+            <li><a href="https://www.linkedin.com/in/delfina-galarza-69b853207/" target="_blanck">Delfina Galarza |</a></li>
+            <li><a href="https://www.linkedin.com/in/i%C3%B1aki-valencia-918555207" target="_blanck">Iñaki Valencia |</a></li>
+            <li><a href="https://www.linkedin.com/in/maria-vaccario-833439212/" target="_blanck">Maria Vaccario</a></li>
+        </ul> 
+                
+        <a href="https://www.themoviedb.org/?language=es" target="_blanck" class="tmdbLogoFooterMobile"><img src="./img/tmdb_logo.svg" alt="TMDB Logo"></a>
+    
+        <a href="https://www.themoviedb.org/?language=es" target="_blanck" class="tmdbLogoDesktop"><img src="./img/tmdb_logo_desktop.svg" alt="TMDB Logo"></a>
+    </footer>
  <script src="./JS/detailGenres.js"></script>
 </body>
 </html>
