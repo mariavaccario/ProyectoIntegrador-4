@@ -22,10 +22,10 @@ fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=c7d8a8e4054747c2b47
 
 })
 
-
 .catch(function(error){
     console.log(error);
 }) 
+
 
 //* generos series *//
 
@@ -41,10 +41,15 @@ fetch(`https://api.themoviedb.org/3/genre/tv/list?api_key=c7d8a8e4054747c2b47d0f
     let info = dataGenerosTV.genres;
    
 
-for (let i=0; i<dataGenerosTV.length; i++)
-generosTV.innerHTML += `<li> <a href= detailGenres.html?id=${info[id].id}">${info[i].name}</a> </li>`
-})
+    let lista = ``
+    for (let i=0; i<info.length; i++)
+    lista += `<li class="listaGeneros"><a href= detailGenres.html?id=${info[i].id}">
+            <h3> ${info[i].name} </h3> 
+            </a> </li>`
+    console.log (lista)
+    generosTV.innerHTML = lista
 
+})
 
 .catch(function(error){
     console.log(error);
