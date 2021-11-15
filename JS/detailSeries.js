@@ -16,14 +16,20 @@ fetch(url)
         let rating =  document.querySelector('.rating');
         let first_air_date = document.querySelector('.first_air_date');
         let overview =  document.querySelector('.overview');
-        // let genero = document.querySelector('.genero');
+        let genero = document.querySelector('.genero');
+
+        let generos = '';
+        for (let i=0; i<data.genres.length; i++){
+            generos += `<span> ${data.genres[i].name}, </span>`
+            console.log(generos);
+        }
 
         imagen.src = `https://image.tmdb.org/t/p/original${data.poster_path}`;
         original_name.innerText = data.original_name;
         rating.innerText = `Calificación: ${data.vote_average}`;
         first_air_date.innerText = `Estreno: ${data.first_air_date}`;
         overview.innerText = `${data.overview}`;
-        // genero.innerText = data.genres;
+        genero.innerHTML = `Genero: ${generos}`;
 
     })
     .catch(function(error){
