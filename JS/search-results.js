@@ -5,7 +5,7 @@ let qsto1 = new URLSearchParams(qs1); // Transformar la qs en un objeto literal
 let idS = qsto1.get('id'); //Obtener el dato de id del objeto literal
 
 
-let urlSearchMovies = `https://api.themoviedb.org/3/search/tv?api_key=c7d8a8e4054747c2b47d0f7ebafc99e6&language=en-US&query=${search}page=1&include_adult=false`;
+let urlSearchMovies = `https://api.themoviedb.org/3/search/tv?api_key=c7d8a8e4054747c2b47d0f7ebafc99e6&language=en-US&query=${idS}`;
 console.log(urlSearchMovies);
 
 fetch(urlSearchMovies)
