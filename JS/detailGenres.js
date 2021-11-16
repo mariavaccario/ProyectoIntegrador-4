@@ -13,20 +13,19 @@ fetch(url)
     .then (function(data){
         console.log(data);
 
-let pelicula = document.querySelector (".generosP")
+    let titulo = document.querySelector ('.tituloPrincipal')
+    titulo.innerText = `${data.name}`
 
-// let articulo = `<article>
-// <h3>${[i].title}</h3>
-// <div class="photo-container">
-//     <a href="./detailMovie.html?id=${infoPP[i].id}"><img src="https://image.tmdb.org/t/p/original${infoPP[i].poster_path}" alt=""></a>
-// </div>
-// <p>Estreno: ${infoPP[i].release_date}</p>
-// </article>`
+    let pelicula = document.querySelector (".generosP")
+    let articulo = `<article>
+                    <h3>${infoPP.title}</h3>
+                    <div class="photo-container">
+                    <a href="./detailMovie.html?id=${infoPP.id}"><img src="https://image.tmdb.org/t/p/original${infoPP.poster_path}" alt=""></a>
+                    </div>
+                    <p>Estreno: ${infoPP.release_date}</p>
+                    </article>`
 
-
-
-
-
+    pelicula.innerHTML=articulo
 
     })
 

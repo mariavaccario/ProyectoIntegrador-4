@@ -3,7 +3,7 @@ let favoritos = JSON.parse (recuperoStorage);
 console.log (favoritos);
 
 
-//SERIIES FAVORITAS
+//SERIES FAVORITAS
 let lista = document.querySelector('.seriesFav');
 let sFavoritas = '';
 let listaP = document.querySelector ('.peliculasFav');
