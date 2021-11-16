@@ -1,20 +1,30 @@
-let recuperoStorage = localStorage.getItem('favoritos');
-let favoritos = JSON.parse (recuperoStorage);
-console.log (favoritos);
+let recuperoSeries = localStorage.getItem('favoritosS');
+let favoritosS = JSON.parse (recuperoSeries);
+console.log (favoritosS);
 
+let recuperoPelis = localStorage.getItem('favoritosP');
+let favoritosP = JSON.parse (recuperoPelis);
 
 //SERIES FAVORITAS
 let lista = document.querySelector('.seriesFav');
 let sFavoritas = '';
 let listaP = document.querySelector ('.peliculasFav');
 let pFavoritas = '';
-if (favoritos == null || favoritos.length == 0){
+if (favoritosS == null || favoritosS.length == 0){
     lista.innerHTML='<p>No tiene seleccionada ninguna serie favorita</p>'
+}
+else {
+    for (let i=0; i<favoritosS.length; i++){
+        tusFav (favoritosS[i])
+    }
+}
+
+if (favoritosP == null || favoritosP.length == 0){
     listaP.innerHTML='<p>No tiene seleccionada ninguna pelicula favorita</p>'
 }
 else {
-    for (let i=0; i<favoritos.length; i++){
-        tusFav (favoritos[i])
+    for (let i=0; i<favoritosP.length; i++){
+        pfavs (favoritosP[i])
     }
 }
 
@@ -42,6 +52,7 @@ function tusFav(id){
             console.log("Error:" + error);
         })
     }
+
     function pfavs(id){
     let urlP = `https://api.themoviedb.org/3/movie/${id}?api_key=c7d8a8e4054747c2b47d0f7ebafc99e6&language=en-US`
     fetch (urlP)
@@ -59,10 +70,10 @@ function tusFav(id){
                                 </article>`;
 
             listaP.innerHTML=pFavoritas
-
+        
+        })
         .catch (function(error){
             console.log("Error:" + error);
-        })
         })
     }
 

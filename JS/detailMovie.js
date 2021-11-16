@@ -43,7 +43,7 @@ fetch(url)
     //BOTON FAVORITOS
 
     let favoritos = [];
-    let recuperoStorage = localStorage.getItem('favoritos');
+    let recuperoStorage = localStorage.getItem('favoritosP');
     
     if (recuperoStorage != null) {
         favoritos = JSON.parse(recuperoStorage);
@@ -69,6 +69,6 @@ fetch(url)
         }
 
         let favsToString = JSON.stringify(favoritos);
-        localStorage.setItem('favoritos', favsToString);
+        localStorage.setItem('favoritosP', favsToString);
         console.log (localStorage)
     })
