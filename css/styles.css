@@ -538,9 +538,25 @@ div.photo-container img.fotogenero {
         justify-content: center;
     }
 
+    article.padreG {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     .listaGeneros {
+        display: inline;
+        padding: 5px;
+        font-size: 30px;
+        margin: 30px;
+        color: white;
+        justify-content: center;
+    }
+
+
+
+    .generosD {
         text-decoration: none;
-        text-align: left;
+        color: white;
     }
     /* section.GenerosPopulares article {
         width: 40vw;

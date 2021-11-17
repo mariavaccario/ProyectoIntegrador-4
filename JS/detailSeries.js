@@ -20,7 +20,7 @@ fetch(url)
 
         let generos = '';
         for (let i=0; i<data.genres.length; i++){
-            generos += `<span> ${data.genres[i].name}, </span>`
+            generos += `<a href=detailGenres.html?id=${data.genres[i].id}&genres=${data.genres[i].name}><span class=generosD>${data.genres[i].name}, </span></a>`
             console.log(generos);
         }
 

@@ -15,7 +15,7 @@ fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=c7d8a8e4054747c2b47
     let lista = ``
     for (let i=0; i<info.length; i++)
     lista += `<li class="listaGeneros"><a href=detailGenres.html?id=${info[i].id}&genres=${info[i].name}>
-            <h3> ${info[i].name} </h3> 
+            <span> ${info[i].name} </span> 
             </a> </li>`
     console.log (lista)
     generosP.innerHTML = lista
