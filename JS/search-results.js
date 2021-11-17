@@ -70,7 +70,7 @@ fetch(urlSeries)
     } else (articulosSeriesEncontradas.length > 0) 
         for (let i=0; i<5; i++) {
         articulosSeriesEncontradas += `<article>
-                                    <h3>${infoSearchSeries[i].original_name}</h3>
+                                    <h3>${infoSearchSeries[i].name}</h3>
                                     <div class="photo-container">
                                     <a href="./detailSeries.html?id=${infoSearchSeries[i].id}""><img src="https://image.tmdb.org/t/p/original${infoSearchSeries[i].poster_path}" alt=" "></a>
                                     </div>
