@@ -18,13 +18,13 @@ fetch(urlMovies)
 .then(function(data){
     console.log(data);
     let infoSearchMovies = data.results;
-    let articulosPeliculasEncontradas = ('');
+    let articulosPeliculasEncontradas = '';
     let peliculasEncontradas = document.querySelector('.peliculasEncontradas')
 
-    if (articulosPeliculasEncontradas.length == 0) {
+    if (infoSearchMovies.length == 0) {
         let moviesNotFound = document.querySelector('.moviesNotFound')
         moviesNotFound.innerText = `No se han encontrado películas que coincidan con: ${queryP}`
-    } else (articulosPeliculasEncontradas.length > 0)
+    } else (infoSearchMovies.length > 0)
         for(let i=0; i<5; i++) {
             articulosPeliculasEncontradas += `<article>
                                         <h3>${infoSearchMovies[i].original_title}</h3>
@@ -36,7 +36,9 @@ fetch(urlMovies)
             console.log(infoSearchMovies[i].poster_path);
     
             peliculasEncontradas.innerHTML = articulosPeliculasEncontradas;
+            
         }
+
 
 })
 
@@ -61,13 +63,13 @@ fetch(urlSeries)
 .then(function(data){
     console.log(data);
     let infoSearchSeries = data.results;
-    let articulosSeriesEncontradas = ('');
+    let articulosSeriesEncontradas = '';
     let seriesEncontradas = document.querySelector('.seriesEncontradas')
 
-    if (articulosSeriesEncontradas.length == 0) {
+    if (infoSearchSeries.length == 0) {
         let seriesNotFound = document.querySelector('.seriesNotFound')
         seriesNotFound.innerText = `No se han encontrado series que coincidan con: ${queryS}`
-    } else (articulosSeriesEncontradas.length > 0) 
+    } else (infoSearchSeries.length > 0) 
         for (let i=0; i<5; i++) {
         articulosSeriesEncontradas += `<article>
                                     <h3>${infoSearchSeries[i].name}</h3>
