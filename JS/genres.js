@@ -44,7 +44,7 @@ fetch(`https://api.themoviedb.org/3/genre/tv/list?api_key=c7d8a8e4054747c2b47d0f
     let lista = ``
     for (let i=0; i<info.length; i++)
     lista += `<li class="listaGeneros"><a href= detailGenres.html?id=${info[i].id}>
-            <h3> ${info[i].name} </h3> 
+            <span> ${info[i].name} </span> 
             </a> </li>`
     console.log (lista)
     generosTV.innerHTML = lista
