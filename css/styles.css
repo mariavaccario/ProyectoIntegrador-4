@@ -246,7 +246,7 @@ article.generosG {
     justify-content: flex-start;
 }
 
-section.padreG {
+a.padreG {
     width: 23vw;
     background-color: black;
     margin: 5px;
@@ -256,7 +256,7 @@ section.padreG {
     text-align: center;
 }
 
-section.padreG a {
+a.padreG {
     text-decoration: none;
     color: white;
 }
@@ -355,7 +355,7 @@ div.logoBuscar img {
 }
 
 /* style generos */
-section.padreG {
+a.padreG {
     width: 22vw;
 }
 
@@ -588,7 +588,7 @@ div.photo-container img.fotogenero {
         justify-content: flex-start;
     }
 
-    section.padreG {
+    a.padreG {
         width: 23.4vw;
         background-color: black;
         margin: 5px;
@@ -598,7 +598,7 @@ div.photo-container img.fotogenero {
         text-align: center;
     }
 
-    section.padreG a {
+    a.padreG {
         text-decoration: none;
         color: white;
     }
