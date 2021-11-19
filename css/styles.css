@@ -301,6 +301,13 @@ span.generosD {
     text-align: center;
 }
 
+img.spinCarga {
+    height: 20vw;
+}
+div.load-container {
+    display: flex;
+    justify-content: center;
+}
 
 
 /* style de detail.genres */
