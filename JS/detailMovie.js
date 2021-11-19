@@ -49,7 +49,7 @@ fetch(url)
         favoritos = JSON.parse(recuperoStorage);
     }
 
-    let botonFav = document.querySelector('.agregarFavoritosP');
+    let botonFav = document.querySelector('.agregarFavoritos');
 
     if (favoritos.includes(id)){
         botonFav.innerText = "Quitar de favoritos";
