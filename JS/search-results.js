@@ -9,6 +9,8 @@ let qs1 = location.search; // obtener la qs de la url
 let qsto1 = new URLSearchParams(qs1); // Transformar la qs en un objeto literal
 let queryP = qsto1.get('search'); //Obtener el dato de id del objeto literal
 
+console.log(qs1);
+
 let tituloPrincipal = document.querySelector('.tituloBusqueda');
 tituloPrincipal.innerText = `El término buscado es: ${queryP}`
 
@@ -67,9 +69,9 @@ fetch(urlMovies)
 
 // Resultado de series
 
-let qs2 = location.search // obtener la qs de la url
-let qsto2 = new URLSearchParams(qs2); // Transformar la qs en un objeto literal
-let queryS = qsto2.get('search'); // obetener el dato de id del objeto literal
+let qs2 = location.search // obtener la qs de la url (en formato string)
+let qsto2 = new URLSearchParams(qs2); //  herramienta que me permite transformar la qs en un objeto literal
+let queryS = qsto2.get('search'); // es el metodo para obetener ese dato el objeto literal
 
 let urlSeries = `https://api.themoviedb.org/3/search/tv?api_key=c7d8a8e4054747c2b47d0f7ebafc99e6&query=${queryS}`
 

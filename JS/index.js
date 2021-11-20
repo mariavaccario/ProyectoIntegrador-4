@@ -95,3 +95,26 @@ formulario.addEventListener('submit', function(evento){
     this.submit();
   }
 })
+
+// validacion formulario de búsqueda mobile
+let formularioM = document.querySelector('.formBusquedaMobile');
+let inputFieldM = document.querySelector('.searchM');
+let messageM = document.querySelector('.messageM');
+
+formularioM.addEventListener('submit', function(evento){
+  evento.preventDefault();
+  console.log('No se envió')
+
+  if(inputFieldM.value == ""){
+    messageM.innerText = "No has ingresado ningún término";
+    messageM.style.textAlign= "center"
+  } else if (inputFieldM.value.length < 3) {
+    messageM.innerText = "Debes ingresar al menos 3 caracteres"
+    messageM.style.textAlign= "center"
+  } else {
+    this.submit();
+  }
+})
+
+
+
