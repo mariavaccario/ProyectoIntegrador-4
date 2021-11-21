@@ -115,3 +115,43 @@ fetch(urlSeries)
 .catch(function(error){
     console.log(error);
 })
+
+// formulario de búsqueda 
+let formulario = document.querySelector('form');
+let inputField = document.querySelector('.search');
+let message = document.querySelector('.message');
+
+formulario.addEventListener('submit', function(evento){
+  evento.preventDefault();
+  console.log('No se envió')
+
+  if(inputField.value == ""){
+    message.innerText = "No has ingresado ningún término";
+  } else if (inputField.value.length < 3) {
+    message.innerText = "Debes ingresar al menos 3 caracteres"
+  } else {
+    this.submit();
+  }
+})
+
+// validacion formulario de búsqueda mobile
+let formularioM = document.querySelector('.formBusquedaMobile');
+let inputFieldM = document.querySelector('.searchM');
+let messageM = document.querySelector('.messageM');
+
+formularioM.addEventListener('submit', function(evento){
+  evento.preventDefault();
+  console.log('No se envió')
+
+  if(inputFieldM.value == ""){
+    messageM.innerText = "No has ingresado ningún término";
+    messageM.style.textAlign= "center"
+  } else if (inputFieldM.value.length < 3) {
+    messageM.innerText = "Debes ingresar al menos 3 caracteres"
+    messageM.style.textAlign= "center"
+  } else {
+    this.submit();
+  }
+})
+
+
