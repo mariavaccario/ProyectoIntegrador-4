@@ -5,7 +5,7 @@ window.addEventListener('load', function () {
 
 // Resultados de Películas
 
-let qs1 = location.search; // obtener la qs de la url
+let qs1 = location.search; // capturar la qs de la url
 let qsto1 = new URLSearchParams(qs1); // Transformar la qs en un objeto literal
 let queryP = qsto1.get('search'); //Obtener el dato de id del objeto literal
 
